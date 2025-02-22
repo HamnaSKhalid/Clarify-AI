@@ -1,0 +1,113 @@
+/* src/components/InstagramApp.css */
+.instagram-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: white;
+}
+
+.insta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  margin-top: 15px;
+}
+
+.back-button, .refresh-button {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-section {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+}
+
+.edit-profile {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 10px;
+}
+
+.post-thumbnail {
+  width: 100%;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.post-viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-post {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.home-icon { background-image: url('../assets/homeIcon.png'); }
+.search-icon { background-image: url('../assets/searchIcon.png'); }
+.add-icon { background-image: url('../assets/addIcon.png'); }
+.heart-icon { background-image: url('../assets/heartIcon.png'); }
+.profile-icon { background-image: url('../assets/profileIcon.png'); }

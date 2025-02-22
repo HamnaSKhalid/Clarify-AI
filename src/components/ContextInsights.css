@@ -1,0 +1,157 @@
+/* ContextInsights.css */
+.context-insights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #dddddd;
+  margin-bottom: 15px;
+}
+
+.file-upload-label {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #4a90e2;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-upload-label:hover {
+  background-color: #357abd;
+}
+
+.file-input {
+  display: none;
+}
+
+.context-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.context-buttons button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #007aff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.context-buttons button:hover {
+  background-color: #005bb5;
+}
+
+.context-info {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Back Button */
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #333;
+}
+
+/* Extra Buttons: Save and More Info */
+.extra-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* More Info button styling */
+.more-info-button {
+  background-color: transparent;
+  color: #4a90e2;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s;
+}
+
+.more-info-button:hover {
+  color: #357abd;
+}
+
+/* Info icon styling */
+.info-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.more-info-button:hover .info-icon {
+  transform: scale(1.1);
+}
+
+/* Save button styling */
+.save-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #4a90e2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.3s ease;
+}
+
+.save-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.save-button.saved .save-icon {
+  filter: invert(50%) sepia(1) saturate(5) hue-rotate(120deg); /* Green tint for saved state */
+  transform: scale(1.1);
+}
+
+.save-button.saved span {
+  color: #34c759;
+}

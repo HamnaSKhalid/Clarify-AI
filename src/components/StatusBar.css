@@ -1,0 +1,125 @@
+/* Status bar container */
+.status-bar {
+    position: absolute;
+    top: 24px; /* Adjusted top to align below the notch */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0px; /* Reduced padding further */
+    font-size: 0.85rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    pointer-events: none; /* Prevents interaction with status bar */
+}
+
+/* Left-aligned time display */
+.status-time {
+    text-align: left;
+    margin-left: 4px; /* Fine-tuned alignment */
+}
+
+/* Right-aligned icons container */
+.status-icons {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* Smaller gap for tighter alignment */
+    margin-right: 36px; /* Adjusted to bring icons closer to the notch */
+}
+
+/* Network icon styling */
+.network-icon {
+    display: flex;
+    gap: 1px;
+    align-items: flex-end;
+}
+
+.bar {
+    width: 3px;
+    background-color: white;
+    border-radius: 1px;
+}
+
+.bar1 {
+    height: 4px;
+    opacity: 0.4;
+}
+
+.bar2 {
+    height: 6px;
+    opacity: 0.6;
+}
+
+.bar3 {
+    height: 8px;
+    opacity: 0.8;
+}
+
+.bar4 {
+    height: 10px;
+    opacity: 1;
+}
+
+/* Wi-Fi icon styling */
+.wifi-icon {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wifi-arc {
+    position: absolute;
+    bottom: 0;
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+
+.wifi1 {
+    width: 4px;
+    height: 4px;
+}
+
+.wifi2 {
+    width: 8px;
+    height: 8px;
+    opacity: 0.7;
+}
+
+.wifi3 {
+    width: 12px;
+    height: 12px;
+    opacity: 0.5;
+}
+
+/* Battery icon styling */
+.battery-icon {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 10px;
+    border: 1.5px solid white;
+    border-radius: 2px;
+    position: relative;
+}
+
+.battery-icon::after {
+    content: '';
+    width: 2px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    right: -3px;
+    top: 2px;
+    border-radius: 1px;
+}
+
+/* Battery level styling for full charge */
+.battery-level {
+    width: 100%; /* Ensure battery is fully filled */
+    height: 100%;
+    background-color: white;
+    border-radius: 1px;
+}

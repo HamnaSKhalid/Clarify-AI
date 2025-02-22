@@ -1,0 +1,22 @@
+/* src/SplashScreen.css */
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.splash-title {
+  font-size: 4rem; /* Very large font for prominence */
+  font-weight: bold;
+  color: #000000; /* Very dark black color for "Clarify AI" */
+  margin: 0;
+}
+
+.splash-loading-text {
+  font-size: 2rem; /* Large text for "Loading..." */
+  color: #555555; /* Lighter gray for subtle contrast */
+  margin-top: 20px;
+}

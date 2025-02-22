@@ -1,0 +1,93 @@
+/* src/components/FloatingFreeModeIcon.css */
+.floating-icon-container {
+  position: absolute;
+  cursor: grab;
+  z-index: 1000;
+}
+
+.floating-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: pulsate 1.5s infinite alternate;
+}
+
+@keyframes pulsate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.floating-menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 10px;
+  width: 150px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  opacity: 0.95;
+  z-index: 1000;
+}
+
+.floating-menu p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+  cursor: pointer;
+}
+
+.truncated-message {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.floating-menu button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4c8bf5;
+  color: #fff;
+  cursor: pointer;
+}
+
+.floating-menu button:disabled {
+  background-color: #d0d0d0;
+  color: #666;
+}
+
+/* Sidebar overlay on the left side with some right margin */
+.sidebar-overlay {
+  position: fixed;
+  top: 50%;
+  left: 20px; /* Adds space between overlay and the left edge of the webpage */
+  transform: translateY(-50%);
+  width: 320px; /* Match width of iPhone frame */
+  height: 600px; /* Match height of iPhone frame */
+  background-color: rgba(255, 255, 255, 0.8); /* Blurred, semi-transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Rounded corners to match iPhone shape */
+  z-index: 1500;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2); /* Shadow for better separation */
+}
+
+/* Text container within the sidebar */
+.sidebar-text {
+  width: 90%;
+  padding: 20px;
+  color: #000; /* Fully black text for readability */
+  font-size: 16px;
+  text-align: center;
+  word-wrap: break-word;
+}

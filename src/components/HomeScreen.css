@@ -1,0 +1,112 @@
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 80px;
+  padding-left: 15px;
+  height: 100vh;
+  background-image: url('../assets/iphone-background.jpg');
+  background-size: cover;
+  background-position: center;
+  gap: 20px;
+  position: relative;
+}
+
+/* Status bar styling */
+.status-bar {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* Dynamic Island styling */
+.dynamic-island {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Row styling for apps, 4 apps per row */
+.app-icons-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 apps per row */
+  gap: 20px; /* Adjusted spacing between apps */
+  padding: 0 15px; /* Padding to avoid icons touching the edges */
+}
+
+/* Container for each app icon and label */
+.app-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* App icon styling */
+.app-icon {
+  width: 65px; /* Adjusted size */
+  height: 65px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.app-icon:hover {
+  transform: scale(1.1);
+}
+
+/* App label styling */
+.app-icon-container p {
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #fff; /* White text for app names */
+  font-weight: 500;
+}
+
+/* Power button styling */
+.power-button {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  width: 5px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 2px;
+  transform: translateY(-50%);
+}
+
+/* Volume buttons styling */
+.volume-buttons {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transform: translateY(-50%);
+}
+
+.volume-up,
+.volume-down {
+  width: 5px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 2px;
+}
+

@@ -1,0 +1,85 @@
+.ai-content-detection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #ffffff; /* White color for the title */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+/* File upload label styled as a button */
+.file-upload-label {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #4a90e2;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-upload-label:hover {
+  background-color: #357abd;
+}
+
+.file-input {
+  display: none; /* Hide the default file input */
+}
+
+/* Detect button styling */
+.detect-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.detect-button:hover {
+  background-color: #e64a19;
+}
+
+.detection-message {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #4caf50; /* Green color to indicate detection success */
+}
+
+/* Back Button */
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #333;
+}
