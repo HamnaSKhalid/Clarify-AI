@@ -32,7 +32,7 @@ For full license details, please see the [LICENSE](LICENSE.md) file.
   - Vsauce  
   - SpaceX  
   - AdvancedTinkering  
-  - Martian Movie  
+  - The Martian 
   - OpenAI images/video/Sora  
 - **AI Images:** Created using OpenAI.  
 - **AI Posts:** Sourced from Google Images.
