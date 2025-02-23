@@ -18,7 +18,7 @@ For full license details, please see the [LICENSE](LICENSE.md) file.
 
 ## Project Background
 - **Creator:** Hamna Khalid  
-- **Concept:** Conceived, designed, and implemented entirely by Hamna Khalid. Although the app was demonstrated with Team 7 as part of a project, all intellectual property rights—including the idea and code—remain solely with Hamna Khalid.
+- **Concept:** Conceived, designed, and implemented entirely by Hamna Khalid. Although the app was demonstrated with Team 7 as part of a project, all intellectual property rights—including the app graphics, the visual idea, and the entire code—remain solely with Hamna Khalid.
 - **Purpose:** Built to showcase a comprehensive React application integrating features like context insights, misinformation prevention, recommendation AI, and AI content detection.
 
 ## Features
