@@ -14,7 +14,7 @@ Experience the app online at:
 ## License
 This repository is distributed under the **Clarify AI Demonstration License**. You are welcome to review, study, and use the code for personal, educational, or non-commercial demonstration purposes. However, any commercial use or replication of the code or underlying ideas is strictly prohibited without prior written consent from **Hamna Khalid**.
 
-For full license details, please see the [LICENSE](LICENSE) file.
+For full license details, please see the [LICENSE](LICENSE.md) file.
 
 ## Project Background
 - **Creator:** Hamna Khalid  
